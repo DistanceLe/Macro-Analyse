@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  MacroDemo
+//
+//  Created by LiJie on 2017/2/15.
+//  Copyright © 2017年 LiJie. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Macros.h"
+
+#endif /* PrefixHeader_pch */
