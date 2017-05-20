@@ -107,7 +107,7 @@
       简单说就是在对它所引用的宏变量 通过替换后在其左右各加上一个双引号  #abc -> "abc"
  3.## 连接符（concatenator）用来将两个Token连接为一个Token (把参数连接在一起, 连接完依旧是一个参数，而不是字符串)
       int a;  int b;  int ab;     a##b  -> ab 变量
- 4....在C宏中称为Variadic Macro，也就是变参宏
+ 4....在C宏中称为Variadic Macro，也就是变参宏  (stderr  标准错误输出设备 也就是控制台 意思是输出到控制台)
       #define myprintf(templt,...) fprintf(stderr,templt,__VA_ARGS__)  没有名字的变参
       #define myprintf(templt,args...) fprintf(stderr,templt,args)     有名字的变参
       #define myprintf(templt,...) fprintf(stderr,templt, ##__VAR_ARGS__)
