@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A87D8F11F01176E001DE2D1 /* XCBaseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A87D8F01F01176E001DE2D1 /* XCBaseTest.m */; };
+		2A87D8F51F013C02001DE2D1 /* LJTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A87D8F41F013C02001DE2D1 /* LJTest.m */; };
 		2ADBC1001E53E8D90085A677 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBC0FF1E53E8D90085A677 /* main.m */; };
 		2ADBC1031E53E8D90085A677 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBC1021E53E8D90085A677 /* AppDelegate.m */; };
 		2ADBC1061E53E8D90085A677 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBC1051E53E8D90085A677 /* ViewController.m */; };
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A87D8EF1F01176E001DE2D1 /* XCBaseTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBaseTest.h; sourceTree = "<group>"; };
+		2A87D8F01F01176E001DE2D1 /* XCBaseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCBaseTest.m; sourceTree = "<group>"; };
+		2A87D8F41F013C02001DE2D1 /* LJTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJTest.m; sourceTree = "<group>"; };
 		2ADBC0FB1E53E8D90085A677 /* MacroDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADBC0FF1E53E8D90085A677 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ADBC1011E53E8D90085A677 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -140,6 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				2ADBC1181E53E8D90085A677 /* MacroDemoTests.m */,
+				2A87D8F41F013C02001DE2D1 /* LJTest.m */,
+				2A87D8EF1F01176E001DE2D1 /* XCBaseTest.h */,
+				2A87D8F01F01176E001DE2D1 /* XCBaseTest.m */,
 				2ADBC11A1E53E8D90085A677 /* Info.plist */,
 			);
 			path = MacroDemoTests;
@@ -303,6 +311,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ADBC1191E53E8D90085A677 /* MacroDemoTests.m in Sources */,
+				2A87D8F51F013C02001DE2D1 /* LJTest.m in Sources */,
+				2A87D8F11F01176E001DE2D1 /* XCBaseTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +544,7 @@
 				2ADBC12A1E53E8D90085A677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2ADBC12B1E53E8D90085A677 /* Build configuration list for PBXNativeTarget "MacroDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +553,7 @@
 				2ADBC12D1E53E8D90085A677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2ADBC12E1E53E8D90085A677 /* Build configuration list for PBXNativeTarget "MacroDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +562,7 @@
 				2ADBC1301E53E8D90085A677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

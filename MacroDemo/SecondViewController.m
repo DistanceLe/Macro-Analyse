@@ -28,14 +28,15 @@
     self.demoView.center = self.view.center;
     self.demoView.backgroundColor = [UIColor redColor];
     
-    //__weak typeof(self) tempWeakSelf=self;
-    
+    __weak typeof(self) tempWeakSelf=self;
     @weakify(self)
     
     [self.demoView setCallBack:^(id obj) {
         
         @strongify(self)
+        typeof(self) strongSelf=tempWeakSelf;
         
+        strongSelf.view.backgroundColor = RandomColor;
         self.view.backgroundColor = RandomColor;
     }];
     [self.view addSubview:self.demoView];
@@ -92,7 +93,7 @@
  @try{} @finally{}      __typeof__(self) self = weak_self;
 
  
- 
+typeof(self) strongSelf=tempWeakSelf; -----> typeof(self) strongSelf=tempWeakSelf;
  
  
  - (void)__attribute__((ibaction))click:(UIButton *)sender {
