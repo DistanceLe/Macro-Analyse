@@ -10,6 +10,16 @@
 #import "TestView.h"
 
 
+#if defined(__cplusplus)
+#define let auto const
+#define var auto
+#else
+#define let const __auto_type
+#define var __auto_type
+#endif
+
+
+
 
 #define RandomColor [UIColor colorWithRed:arc4random()%256/255.0f green:arc4random()%256/255.0f blue:arc4random()%256/255.0f alpha:1]
 
@@ -28,6 +38,12 @@
     self.demoView.center = self.view.center;
     self.demoView.backgroundColor = [UIColor redColor];
     
+    
+    var but = [UIButton new];
+    let num = 89;
+    let numF = 42.5;
+    
+    
     __weak typeof(self) tempWeakSelf=self;
     @weakify(self)
     
@@ -38,6 +54,10 @@
         
         strongSelf.view.backgroundColor = RandomColor;
         self.view.backgroundColor = RandomColor;
+        
+        //开始😯
+//        self.demoView.backgroundColor = RandomColor;
+//        _demoView.backgroundColor = RandomColor;
     }];
     [self.view addSubview:self.demoView];
     
